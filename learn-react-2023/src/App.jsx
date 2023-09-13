@@ -62,6 +62,7 @@ function App() {
 
       {/* search แบบ map จะทำการรับ parameter มา 1 ตัว */}
       {/* จะเป็นคำว่า item หรือ products ก็ได้ */}
+      {/* product เก็บค่าเป็นแบบ Array เพราะฉะนั้นเราต้องใช้ map ควบคู่กับ loop ในการ search */}
       <ul>
         {products.map(item => (
           <li key={item.id}>{item.title}</li>
